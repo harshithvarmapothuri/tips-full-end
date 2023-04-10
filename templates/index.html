@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Flask Web API</title>
+  </head>
+  <body>
+    <h1>Predict the Gender</h1>
+    <form action="/calculate_tip" method="post">
+      <label for="total_bill">Total Bill Payed:</label>
+      <input type="text" id="total_bill" name="total_bill"><br><br>
+      
+      <label for="total_tip">Total Tip Given:</label>
+      <input type="text" id="total_tip" name="total_tip"><br><br>
+      
+      <label for="time_of_event">Time of Event:</label>
+      <select id="time_of_event" name="time_of_event">
+        <option value="Dinner">Dinner</option>
+        <option value="Lunch">Lunch</option>
+      </select><br><br>
+      
+      <input type="submit" value="Submit">
+    </form>
+    
+ 
+      <h2>Predicted Gender is:</h2>
+      <p>{{ tip_amount }}</p>
+   
+  </body>
+</html>
